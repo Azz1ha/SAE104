@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}À propos{% endblock %}
+
+{% block body %}
+<h1>Mes passions et projets</h1>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <img src="{{ asset('images/sport.jpg') }}" class="img-fluid rounded">
+        <h3 class="mt-2">Sport</h3>
+        <p>Football, musculation, dépassement de soi.</p>
+    </div>
+
+    <div class="col-md-4">
+        <img src="{{ asset('images/informatique.jpg') }}" class="img-fluid rounded">
+        <h3 class="mt-2">Informatique</h3>
+        <p>Développement web, réseaux, cybersécurité.</p>
+    </div>
+
+    <div class="col-md-4">
+        <img src="{{ asset('images/projet.jpg') }}" class="img-fluid rounded">
+        <h3 class="mt-2">Projets</h3>
+        <p>Création de sites web et projets étudiants.</p>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<h1 class="text-center mb-4">NOM Prénom</h1>
+
+<p class="text-center">
+    Groupe TP : <strong>TP X</strong>
+</p>
+
+<p class="lead text-center">
+    Étudiant motivé en réseaux et télécommunications, passionné par le numérique et les nouvelles technologies.
+</p>
+
+<div class="card mt-5">
+    <div class="card-body">
+        <h2 class="card-title">Pour en savoir plus</h2>
+        <p class="card-text">
+            Découvrez mes passions, loisirs, projets et centres d’intérêt.
+        </p>
+        <a href="{{ path('about') }}" class="btn btn-primary">
+            Découvrir
+        </a>
+    </div>
+</div>
+{% endblock %}
